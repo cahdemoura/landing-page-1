@@ -1,0 +1,132 @@
+:root {
+    --background-page-color: #222222;
+    --color-font: #ffff;
+    --color-font-title: #840ec9;
+}
+
+body {
+    padding: 0px;
+    background-color: var(--background-page-color);
+    color: var(--color-font);
+    font-family: 'poppinsregular', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    /*border: 1px solid red;*/
+}
+
+#title h1 {
+    line-height: 10px;
+    font-weight: 200;
+}
+
+header nav ul {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 16px;
+}
+
+header nav ul li {
+    /*border: 1px solid red;*/
+    padding: 5px 12px;
+
+}
+
+header nav ul a {
+    color: var(--color-font);
+    text-decoration: none;
+    transition: 10ms all;
+}
+
+header nav ul a:hover {
+    color: var(--color-font-title);
+}
+
+header nav ul a:nth-child(5) {
+    border: 2px solid var(--color-font-title);
+    border-radius: 10px;
+    padding: 0px 16px;
+}
+
+header nav ul a:nth-child(5):hover {
+    color: var(--color-font);
+    background: var(--color-font-title);
+}
+
+main {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    column-gap: 60px;
+}
+
+main aside h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'poppinsmedium', sans-serif;
+}
+
+.color-title {
+    color: var(--color-font-title);
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: 'poppinslight', sans-serif;
+}
+
+img {
+    max-width: 620px;
+}
+
+aside {
+    /*border: 1px solid red;*/
+    max-width: 40vw;
+}
+
+article {
+    /*border: 1px solid red;*/
+    width: 40vw;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+input {
+    margin-top: 20px;
+    border-radius: 16px;
+    height: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+input:nth-child(3) {
+    width: 50%;
+    height: 60px;
+    line-height: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--color-font-title);
+    color: var(--color-font);
+    font-weight: 800;
+    font-size: 18px;
+    cursor:pointer;
+}
